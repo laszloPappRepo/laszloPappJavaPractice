@@ -32,10 +32,9 @@ public class StringReverser {
     }
 
     public static String reverserOfWords(String input){
+        List<String> inputWords = Arrays.asList(input.split(" "));
         List<String> outputWords = new ArrayList<>();
         String reversed = "";
-
-        List<String> inputWords = Arrays.asList(input.split(" "));
 
         for (int i = 0; i < inputWords.size(); i++) {
             outputWords.add(new StringBuilder(inputWords.get(i)).reverse().toString());
