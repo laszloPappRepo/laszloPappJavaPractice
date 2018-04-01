@@ -1,3 +1,6 @@
+//A számítógép hozzon létre egy véletlen számot a [0..100] intervallumban!
+//A felhasználónak a feladata a szám kitalálása, a számítógép írja ki, hogy a tipp „Túl nagy”, vagy „Túl kicsi” 
+
 import java.util.Random;
 import java.util.Scanner;
 
