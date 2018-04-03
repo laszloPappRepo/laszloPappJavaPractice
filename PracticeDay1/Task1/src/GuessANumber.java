@@ -14,28 +14,28 @@ public class GuessANumber {
         GameMessage gameMessage = new GameMessage();
 
         int guessedNumber;
-        boolean loop = true;
+        boolean guessGameLoop = true;
 
-        System.out.println(gameMessage.getStart());
+        System.out.println(gameMessage.start);
 
         Scanner scannedNumber = new Scanner(System.in);
 
         try {
             guessedNumber = Integer.parseInt(scannedNumber.nextLine());
-            while (loop) {
+            while (guessGameLoop) {
                 if (numberToGuess > guessedNumber) {
-                    System.out.println(gameMessage.getGreater());
+                    System.out.println(gameMessage.greater);
                     guessedNumber = Integer.parseInt(scannedNumber.nextLine());
                 } else if (numberToGuess < guessedNumber) {
-                    System.out.println(gameMessage.getSmaller());
+                    System.out.println(gameMessage.smaller);
                     guessedNumber = Integer.parseInt(scannedNumber.nextLine());
                 } else if (numberToGuess == guessedNumber) {
-                    System.out.println(gameMessage.getWin());
-                    loop = false;
+                    System.out.println(gameMessage.win);
+                    guessGameLoop = false;
                 }
             }
         }catch (NumberFormatException NFE){
-            System.out.println(gameMessage.getOver());
+            System.out.println(gameMessage.over);
         }
     }
 }

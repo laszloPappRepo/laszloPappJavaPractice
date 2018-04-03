@@ -1,31 +1,11 @@
 public class GameMessage {
 
-    String start;
-    String greater;
-    String smaller;
-    String win;
-    String over;
+    String start = "Guess a number!";
+    String greater = "The number you did provide greater than we are looking for. :( Guess again!";
+    String smaller = "The number you did provide smaller than we are looking for. :( Guess again!";
+    String win = "You just hit the number! Well done! :D";
+    String over = "Provide a valid number! Game Over! :(";
 
     public GameMessage() {
-    }
-
-    public String getStart() {
-        return "Guess a number!";
-    }
-
-    public String getGreater() {
-        return "The number you did provide greater than we are looking for. :( Guess again!";
-    }
-
-    public String getSmaller() {
-        return "The number you did provide smaller than we are looking for. :( Guess again!";
-    }
-
-    public String getWin() {
-        return "You just hit the number! Well done! :D";
-    }
-
-    public String getOver() {
-        return "Provide a valid number! Game Over! :(";
     }
 }
