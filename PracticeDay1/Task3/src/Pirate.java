@@ -17,21 +17,18 @@ public class Pirate {
 
     private static String pirating(String input) {
         List<String> inputWords = Arrays.asList(input.split(" "));
-        List<String> outputWords = new ArrayList<>();
-        List<String> words = new ArrayList<>();
-        String pirated = "";
-        String firstLetter = "";
+        List<String> piratedWords = new ArrayList<>();
+        String pirating;
+        String piratedString = "";
 
         for (int i = 0; i < inputWords.size(); i++) {
-            words.add(inputWords.get(i).substring(1));
-            firstLetter = String.valueOf(inputWords.get(i).charAt(0));
-        }
-        for (int j = 0; j < words.size(); j++) {
-            StringBuffer sb = new StringBuffer(words.get(j));
-            outputWords.add(String.valueOf(sb.append(firstLetter)));
+            pirating = inputWords.get(i).substring(1) + inputWords.get(i).charAt(0) + "arr";
+            piratedWords.add(pirating);
         }
 
-
-        return pirated;
+        for (int i = 0; i < piratedWords.size(); i++) {
+            piratedString += piratedWords.get(i) + " ";
+        }
+        return piratedString;
     }
 }
