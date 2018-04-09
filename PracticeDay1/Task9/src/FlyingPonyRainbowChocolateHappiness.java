@@ -25,8 +25,8 @@ public class FlyingPonyRainbowChocolateHappiness {
         Pony CrimsonMoon = new Pony("red");
         Pony ManuPony = new Pony("rainbow");
 
-        Pony[] menes = new Pony[]{JackpotStar, ColtIce, DapperForce, CrimsonMoon, ManuPony};
+        Pony[] stable = new Pony[]{JackpotStar, ColtIce, DapperForce, CrimsonMoon, ManuPony};
 
-        System.out.println(Arrays.asList(menes));
+        System.out.println(Arrays.asList(stable));
     }
 }
