@@ -27,6 +27,11 @@ public class FlyingPonyRainbowChocolateHappiness {
 
         Pony[] stable = new Pony[]{JackpotStar, ColtIce, DapperForce, CrimsonMoon, ManuPony};
 
-        System.out.println(Arrays.asList(stable));
+        stable[4].makeUnicorn(ManuPony);
+        stable[1].makeUnicorn(ColtIce);
+
+        for (int i = 0; i < stable.length; i++) {
+            System.out.println(stable[i].getColor() + " " + stable[i].getExtremities() + " " + stable[i].isCanFly());
+        }
     }
 }

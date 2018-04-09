@@ -29,7 +29,12 @@ public class Pony {
         return canFly;
     }
 
-    public void setCanFly(boolean canFly) {
+    protected void setCanFly(boolean canFly) {
         this.canFly = canFly;
+    }
+
+    public void makeUnicorn(Pony pony){
+        pony.setExtremities(6);
+        pony.setCanFly(true);
     }
 }
